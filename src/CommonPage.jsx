@@ -28,7 +28,7 @@ const CommonPage = () => {
     console.log(process.env.REACT_API_KEY)
   };
   useEffect(() => {
-    getData();
+    getData();   // eslint-disable-next-line
   }, [])
 
   return (

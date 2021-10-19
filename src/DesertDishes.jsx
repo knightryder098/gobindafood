@@ -13,7 +13,7 @@ const DesertDishes = () => {
   }
 
   useEffect(() => {
-    getData();
+    getData(); // eslint-disable-next-line
   }, [])
   return (
     <>
