@@ -1,6 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import FoodCard from './FoodCard';
+// require('dotenv').config()
+
 const CommonPage = () => {
 
   const [searchData, setSD] = useState('chicken');
@@ -8,6 +10,8 @@ const CommonPage = () => {
   const getSearchData = (event) => {
     setSD(event.target.value);
   };
+
+  // const key = process.env.REACT_API_KEY;
 
   const [data, setData] = useState([]);
   const getData = async () => {
@@ -52,6 +56,7 @@ const CommonPage = () => {
                 name={currELe.name}
                 content={currELe.content}
                 key={index}
+
 
               />)
             })
